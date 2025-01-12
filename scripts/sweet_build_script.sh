@@ -2,7 +2,7 @@
 
 # Dependencies
 rm -rf kernel
-git clone $REPO -b $BRANCH kernel
+git clone --recurse-submodules $REPO -b $BRANCH kernel
 cd kernel
 
 clang() {
