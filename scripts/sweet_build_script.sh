@@ -141,6 +141,7 @@ compile() {
                               CC=clang \
                               CLANG_TRIPLE=aarch64-linux-gnu- \
                               CROSS_COMPILE=aarch64-linux-android- \
+			      CROSS_COMPILE_COMPAT=arm-linux-androideabi- \
                               CROSS_COMPILE_ARM32=arm-linux-androideabi-  2>&1 | tee error.log
 
     if [ -f "$IMG" ]; then
